@@ -1,0 +1,101 @@
+:root {
+  --white: #fff;
+  --primary: #0066ff;
+  --secondary: #ff9900;
+  --success: #6fdd2a;
+  --info: #11e4f7;
+  --warning: #f7af2a;
+  --danger: #ed4c34;
+  --grey: #999999;
+  --dark: #121212;
+  --light-grey: #f2f2f2;
+}
+
+body {
+  color: var(--dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Components */
+.main-btn {
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border-color: var(--primary);
+}
+
+.main-btn:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--white);
+}
+/* Components */
+
+/* Start Navbar */
+.navbar {
+  background-color: #fbfbfb;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+}
+
+.navbar .nav-link {
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  color: var(--primary);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--secondary);
+}
+
+.navbar .navbar-toggler {
+  color: var(--primary);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .dropdown-menu {
+  background-color: #fbfbfb;
+}
+
+.navbar .dropdown-menu li:not(:last-child) a.dropdown-item {
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+/* End Navbar */
+/* Start Login */
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid var(--grey);
+}
+.login-code {
+  max-width: 600px;
+  width: 100%;
+}
+
+.danger-btn {
+  color: var(--white);
+  background-color: var(--danger);
+  max-width: 100px;
+  width: 100%;
+}
+
+.danger-btn:hover {
+  color: var(--white);
+}
+.my-alert {
+  max-width: 900px;
+  width: 100%;
+}
+/* End Login */
